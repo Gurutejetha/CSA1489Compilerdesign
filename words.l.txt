@@ -1,0 +1,16 @@
+%{
+int c=0;
+int d;
+%}
+%%
+[ ] {c++;}
+%%
+int yywrap(void){}
+int main()
+{
+printf("enter \n");
+yylex();
+d=c+1;
+printf("\n total no. of words %d",d);
+return 0;
+}
